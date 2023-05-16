@@ -11,7 +11,7 @@ output                parity
 #`ifdef EVEN_PARITY
 assign parity = ^inp;  //Bit-wise XOR for Even pairty bit generation. Same is used for parity checking
 #else
-assign parity = ~^inp;
+assign parity = ~^inp; //Bit-wise XNOR for Odd parity Generation
 #`endif macro
 
 endmodule
